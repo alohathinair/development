@@ -1,0 +1,91 @@
+.left {
+	float: left;
+}
+.header-text {
+	font: 14px bold "Verdana";
+}
+
+
+#configure-report-container {
+	height: 125px;
+}
+
+#configure-report-container > div {
+	float: left;
+	height:120px;
+}
+
+#select-report-type-box {
+	width: 100px;
+}
+
+#select-report-box {
+	width: 100px;
+}
+
+#select-report-drivers-box {
+	width: 200px;
+}
+
+#drivers {
+	width: 180px;
+}
+
+#select-report-dates-box {
+	width: 120px;
+}
+
+#select-report-filters-box {
+	width: 200px;
+}
+
+#generate-report-box {
+
+}
+
+#route-playback-container {
+	display: none;
+}
+
+#report-list {
+	width: 487px;
+	float: left;
+
+}
+
+#report-list-column-headings {
+	width: 487px;
+	height: 33px;
+	background: url(/images/bar-thin-spacer.png);
+	background-repeat: repeat-x;
+}
+
+#report-list-column-headings > div {
+	padding-top: 10px;
+	float: left;
+	
+}
+
+#report-list-container {
+	height: 500px;
+	overflow: auto;
+}
+
+#report-list-results {
+	width: 100%;
+}
+#report-graphic-results {
+	float: left;
+	width: 487px;
+	height: 500px;
+	margin-left: 20px;
+}
+
+#map {
+	width: 500px;
+	height: 500px;
+}
+
+td { 
+	font-size: 10px;
+}

@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+body {
+	background-color: #FFF;
+	margin:0 auto;
+}
+a:link {
+	color: #666;
+}
+a:visited {
+	color: #666;
+}
+a:hover {
+	color: #999;
+}
+a:active {
+	color: #666;
+}
+h1 {
+	font-size: 18px;
+	color: #666;
+}
+h2 {
+	font-size: 16px;
+	color: #666;
+}
+h3 {
+	font-size: 14px;
+	color: #666;
+}
+
+/* Wrappers */
+#wrapper-all {
+	width:975px;
+	margin:auto;
+}
+
+#wrapper-menu {
+	height:19px;
+	margin:8px 0px 0px 8px;
+}
+
+#map {
+	padding:0px 20px;	
+}
+
+#wrapper-login {
+	margin:auto;
+	width:315px;
+	height:216px;
+	background-image:url(../images/login.jpg);
+	background-repeat:no-repeat;
+}
+
+#wrapper-login .inner {
+	margin:55px 10px 0px 10px;
+	padding-top: 41px;
+}
+#wrapper-login .txtfield {
+	font-size:14px;
+	padding:4px;
+	width:90%;
+}
+#wrapper-login .btn {
+	padding:5px;
+}
+#wrapper-login .lostpw {
+	margin:5px;
+	font-size:10px;
+	color:#666;
+}

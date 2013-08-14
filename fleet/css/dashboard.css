@@ -1,0 +1,71 @@
+.dashboard-section-header {
+    border: 1px solid #d9d8d8;
+    background: #dde5f0;
+    background: -webkit-gradient(linear, left top, right top, from(#c4cdda), to(#dde5f0));
+    background: -moz-linear-gradient(left, #c4cdda, #dde5f0);
+    padding: 5.5px 11px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: #3d3f44;
+    height: 35px;
+}
+
+.dashboard-section-name {
+    width: 100px;
+    font-weight: bold;
+}
+
+label {
+    margin-top: 4px;
+    float: left;
+    margin-right: 10px;
+}
+
+#from-wrapper {
+    float: left;
+    margin-left: 20px;
+}
+
+#daterange, #group{
+    float: left;
+}
+
+#daterange {
+    width: 200px;
+    border: 1px solid #B5B8C8;
+}
+
+.dashboard_fleet {
+    width: 400px;
+    float: left;
+    min-width: 400px;
+    height: 300px;
+    margin-top: 15px;
+    margin-left: 20px;
+    overflow-y: auto;
+}
+
+#dashboard_fleet_engine_on_off {
+
+}
+
+#dashboard_fleet_average_speed {
+/*    margin-left: 400px;*/
+}
+
+#dashboard_fleet_distance_traveled {
+    /*margin-left: 800px;*/
+}
+
+#dashboard_fleet_excessive_speed {
+}
+
+#dashboard_fleet_stops {
+    /*margin-left: 400px;*/
+}
+
+#dashboard_fleet_engine_idle {
+    /*margin-left: 800px;*/
+}
+

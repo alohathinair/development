@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #666;
+	margin:0px 0px;
+	background-color: #EEE;
+}
+
+table, td {
+	font-size: 12px;
+}
+
+* { font-family: Verdana, Geneva, sans-serif; }
+
+.fix {clear:both;}
+
+
+h1 {
+	font-size: 24px;
+	color: #F60;
+}
+h2 {
+	font-size: 18px;
+	color: #F60;
+}
+h3 {
+	font-size: 18px;
+	color: #06C;
+}
+h4 {
+	font-size: 16px;
+	color: #F60;
+}
+h5 {
+	font-size: 16px;
+	color: #06C;
+}
+h6 {
+	font-size: 14px;
+	color: #F60;
+}
+
+#header-wrapper {
+	width:100%;
+}
+
+#header-links-right {
+	float:right;
+}
+
+.clear {
+	clear: both;
+}
+
+a img {border:0px;}
+
+a.header-menu-button-wrapper:active {
+	float:left;
+	text-align:center;
+	line-height:20px;
+	padding:16px;
+	background-color:#F60;
+	background-position:right;
+	color:#000;
+	width:80px;
+	background-image:url(../images/btn-dn.jpg);
+	}
+	
+#conditional-header {
+	padding:10px 50px;
+	background-color:#CCC;
+}
+
+#wrapper-obody{
+	width:90%;
+	padding:15px;
+}
+
+/* Dialog Stuff */
+.form-dialog fieldset {
+	border: none;
+}
+
+.form-dialog fieldset .text {
+	display: block;
+	width: 93%;
+}
+
+fieldset {
+	border: none;
+}
+
+
+
+
+/* New Interface Stuff */
+
+#container {
+	min-width: 980px;
+	width: 95%;
+	margin: auto;
+}
+
+#header {
+	margin-top: 20px;	
+}
+
+#header h1 {
+	color: black;
+}
+
+#navbar {
+	background-image: url(../images/menu-spacer.jpg);
+	background-repeat:repeat-x;
+	min-width: 980px;
+	width: 100%;
+
+}
+
+#navbar a:link {
+	color: black;
+	text-decoration: none;
+}
+#navbar a:visited {
+	color: black;
+}
+#navbar a:hover {
+	color: black;
+}
+
+
+#footer {
+	background-image: url(../images/menu-spacer.jpg);
+	background-repeat:repeat-x;
+	min-width: 980px;
+	width: 100%;
+	margin: 10px 0px;
+}
+
+.menu-item {
+	display: block;
+	height: 43px;
+	float: left;
+
+}
+
+a.menu-item .left {
+	padding-left: 0px;
+}
+
+a.menu-item {
+	height: 29px;
+	padding: 14px 20px 0px 20px;
+
+}
+
+.gray-background {
+	background-color: #E8E8E8;
+}

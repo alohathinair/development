@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+body {
+	background:url(../images/login/bg.jpg);
+	background-repeat: repeat-x
+	background-color: #999;
+	padding: 0px;
+	margin: 0px;
+}
+
+#container {
+	width: 1400px;
+	height: 720px;
+	margin: auto;
+	background:url(../images/login/container-bg.jpg);
+}
+
+.login-field {
+	background: transparent;
+	border: none;
+	width: 342px;
+	height: 42px;
+	font-size: 24px;
+}
+
+#email {
+	position: relative;
+	top: 254px;
+	left: 520px;
+
+}
+
+#password {
+	position: relative;
+	top: 234px;
+	left: 520px;
+}
+
+#login {
+	position: relative;
+	top: 340px;
+	left: 170px;
+}

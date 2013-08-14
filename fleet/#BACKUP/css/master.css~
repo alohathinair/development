@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #666;
+	margin:0px 0px;
+}
+body {
+	background-color: #FFF;
+	background-image: url(../images/bg.png);
+	background-repeat: repeat-x;
+}
+
+.fix {clear:both;}
+a:link {
+	color: #06C;
+}
+a:visited {
+	color: #039;
+}
+a:hover {
+	color: #09F;
+}
+a:active {
+	color: #09F;
+}
+
+h1 {
+	font-size: 24px;
+	color: #F60;
+}
+h2 {
+	font-size: 18px;
+	color: #F60;
+}
+h3 {
+	font-size: 18px;
+	color: #06C;
+}
+h4 {
+	font-size: 16px;
+	color: #F60;
+}
+h5 {
+	font-size: 16px;
+	color: #06C;
+}
+h6 {
+	font-size: 14px;
+	color: #F60;
+}
+
+#header-wrapper {
+	width:100%;
+}
+
+#header-links-right {
+	float:right;
+}
+
+.clear {
+	clear: both;
+}
+
+a img {border:0px;}
+
+a.header-menu-button-wrapper {
+	float:left;
+	text-align:center;
+	line-height:20px;
+	padding:16px;
+	text-decoration:none;
+	width:80px;
+	background-image:url(../images/btn-up.jpg);
+	background-position:right;
+}
+
+a.header-menu-button-wrapper:hover {
+	float:left;
+	text-align:center;
+	line-height:20px;
+	padding:16px;
+	background-color:#F60;
+	background-image:url(../images/btn-over.jpg);
+	background-position:right;
+	color:#000;
+	width:80px;
+	}
+
+a.header-menu-button-wrapper:active {
+	float:left;
+	text-align:center;
+	line-height:20px;
+	padding:16px;
+	background-color:#F60;
+	background-position:right;
+	color:#000;
+	width:80px;
+	background-image:url(../images/btn-dn.jpg);
+	}
+	
+#conditional-header {
+	padding:10px 50px;
+	background-color:#CCC;
+}
+
+#wrapper-obody{
+	width:930px;
+	padding:15px;
+}
+
+/* Dialog Stuff */
+.form-dialog fieldset {
+	border: none;
+}
+
+.form-dialog fieldset .text {
+	display: block;
+	width: 93%;
+}
+
+fieldset {
+	border: none;
+}
+}

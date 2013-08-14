@@ -1,0 +1,6 @@
+---
+db: { host: 72.3.253.228, port: 3670, username: webuser, password: MENINBLACK, persistant: false }
+tawf_host: tawfdev.mythinairwireless.com
+component_options:
+	googlemaps:
+		api_key: ABQIAAAAbLLAWxBrP9e3ZVoO9uj4jBQjcuZLS0mqG-xu4WCqBRWIltTrahT70soHulmSudFC-SH1G88kyfrN1g

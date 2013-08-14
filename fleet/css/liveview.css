@@ -1,0 +1,812 @@
+/*#map {
+	width: 100%;
+	height: 500px;
+}
+
+.liveview-menu-button {
+	display: inline;
+}
+
+#vehicle-information-tabs {
+	display: none;
+	height: 400px;
+}
+
+#user_notification_list {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 320px;
+}
+
+
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html, body {
+height: 100%;
+position: fixed;
+}
+
+body {
+    overflow-y: hidden ! important;
+    width: 100%;
+}
+.accordian {
+
+}
+
+.accordian .head {
+
+}
+
+.accordian .content {
+
+}
+
+#liveview-wrapper {
+    /*width: 100%;*/
+}
+
+#container {
+    width:  100%;
+    height: 100%;
+    padding:  0px;
+    margin: 0px;
+}
+
+#main-area {
+    margin-top: 2px !important;
+    width:  100%;
+    height: 100%;
+}
+
+#map {
+    width: 700px;
+    height: 500px;
+} 
+
+#street-view {
+    display: none;
+}
+
+#liveview-navbar {
+    height: 40px;
+    margin-left: 40px;
+}
+
+#liveview-navbar ul {
+    padding-top: 0px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+#liveview-navbar li {
+  /*  width: 200px;*/
+    height: 25px;
+    display: inline;
+}
+
+#liveview-navbar li a {
+    padding-top: 5px;
+    text-decoration: none;
+    float: left;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+
+#liveview-panel {
+    box-shadow: rgba(0, 0, 0, 0.296875) 1px 0px 0px 0px;
+    /* background: #6b6b6b;*/
+    /* background: rgba(90, 90, 90, .8);*/
+    /*border-right: 1px solid #ccc;*/
+    /*background: rgb(208,208,208);*/
+    /*background: #ededed;*/
+    background: #DDD;
+    padding: 0px;
+    border-spacing: 0px;
+    height: 700px;
+    width: 300px;
+    float: left;
+    margin-left: -100%;
+
+
+    /* display: block;
+        position:absolute;
+        height:auto;
+        width: 300px;
+        bottom:0;
+        top:0;
+        left:0;
+        right:0;
+        margin-top:50px;
+        margin-bottom:20px;
+        margin-right:80px;
+        margin-left:0px;
+        background-color: green;
+    */
+}
+#liveview-map-wrapper {
+    float:  left;
+    height: 100%;
+    width: 100%;
+}
+#liveview-map {
+    height: 100%;
+    margin-left: 300px;
+}
+
+#tabs {
+    /*height: 100%;*/
+    /*position: absolute;
+    top: 220px;
+    bottom: 165px;*/
+    position: fixed;
+    top: 120px;
+    bottom: 170px;
+}
+#liveview-header {
+    height: 100px;
+    position: fixed;
+}
+
+#liveview-panel-content {
+   /* height: 80%;*/
+    vertical-align: text-top;
+}
+
+#liveview-panel-content-row {
+    height: 100%;
+}
+
+#liveview-panel-footer {
+    height: 300px;
+}
+
+.liveview-select {
+    background: #747474;
+    border: 1px solid #636363;
+    color: #ccc;
+    height: 23px;
+    margin-bottom: 5px;
+}
+
+.liveview-select option {
+    background: #747474;
+}
+
+#liveview-search-route-wrapper {
+    /*margin-top: 15px;*/
+}
+
+.liveview-list {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.liveview-list li {
+    height: 25px;
+    display: inline;
+}
+
+.liveview-btn {
+    /*background: #6b6b6b;*/
+    color: #e8e8e8;
+    border-color: #636363;
+
+    background: #a0a0a0; /* Old browsers */
+    background: -moz-linear-gradient(top, #a0a0a0 0%, #464646 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a0a0a0), color-stop(100%,#464646)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #a0a0a0 0%,#464646 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #a0a0a0 0%,#464646 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #a0a0a0 0%,#464646 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0a0a0', endColorstr='#464646',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #a0a0a0 0%,#464646 100%); /* W3C */
+
+    cursor: pointer;
+    margin: 0px;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+.liveview-btn-first {
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom: 1px solid;
+    border-top:  1px solid;
+    border-left: 1px solid;
+    border-color: #636363;
+}
+
+.liveview-btn-middle  {
+    border-bottom: 1px solid #636363;
+    border-top:  1px solid #636363;
+    border-left: 1px solid #636363;
+}
+
+.liveview-btn-single {
+    border: 1px solid #636363;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.liveview-btn-last {
+    border-bottom: 1px solid;
+    border-top:  1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-color: #636363;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.liveview-btn-selected {
+    background: #f9f9f9 !important;; /* Old browsers */
+    background: -moz-linear-gradient(top, #f9f9f9 0%, #dedede 100%) !important;; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#dedede)) !important;; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f9f9f9 0%,#dedede 100%) !important;; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f9f9f9 0%,#dedede 100%) !important;; /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #f9f9f9 0%,#dedede 100%) !important;; /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dedede',GradientType=0 ) !important;; /* IE6-9 */
+    background: linear-gradient(top, #f9f9f9 0%,#dedede 100%) !important;; /* W3C */
+
+    /*background: #479530;*/
+    color: #000000;
+}
+
+#liveview-version {
+    text-align: center;
+
+    font-size: 80%;
+}
+
+#liveview-controls {
+    /*position: absolute;*/
+    margin: 0px 10px;
+    bottom: 0px;
+    width: 275px;
+    height:  140px;
+    padding-left: 4px;
+    vertical-align: bottom;
+    position: fixed;
+    /*padding-top: 20px;*/
+}
+
+#groups, #groups-history {
+    width: 270px;
+    margin-left: 10px;  
+}
+
+#tab-live, #tab-history {
+     height: 100%;
+
+}
+
+#tab-history {
+    
+}
+
+.route-circle {
+    margin-top: 2px;
+    margin-right: 4px;
+    width: 22px;
+    height: 22px;
+    background-color: rgb(106, 196, 77);
+    border: 1px solid rgb(21, 152, 50);
+    -webkit-border-radius: 11px; -moz-border-radius: 11px;
+    float: left;
+}
+
+
+.route-circle p {
+    text-align: center;
+    margin-top: 2px;
+}
+
+#route-query {
+    position: absolute !important;
+    left: 400px;
+    bottom: 40px;
+    z-index: 2 !important;
+    width: 350px !important;
+    height: 80px;
+    padding: 5px;
+    background-color: rgba(255,255,255,.8);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+#route-options {
+    margin-top: 5px;
+}
+
+.map-overlay {
+	width: 100%;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+        background-color: #ffffff;
+}
+
+#search-query {
+    position: absolute !important;
+    left: 400px;
+    top: 80px;
+    z-index: 2 !important;
+    width: 350px;
+   /* height: 40px;*/
+    padding: 5px;
+    background-color: rgba(255,255,255,.8);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+#search-result {
+    position: absolute !important;
+    left: 400px;
+    top: 160px;
+    z-index: 2 !important;
+    width: 350px;
+    height: 500px;
+    background-color: rgba(255,255,255,.8);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    padding: 5px;
+    overflow: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+.route-query-full-screen {
+    left: 100px !important;
+}
+
+.search-query-full-screen {
+    left: 100px !important;
+    top: 30px !important;
+}
+
+.search-result-full-screen {
+    left: 100px !important;
+    top: 110px !important;
+}
+
+.styled-button-small {
+    /*padding: 3px;*/
+}
+
+.styled-button {
+    font-size: 11px;
+    font-weight: bold;
+    /*background: #222 url(/images/btn-overlay.png) repeat-x;*/
+    background: rgb(87,87,87);
+    display: inline-block;
+    padding: 5px 4px 4px;
+    color: white;
+    height: 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+    /*
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);*/
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    margin-left: 4px;
+    border: 0px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.styled-text {
+    border: 1px solid #AAA;
+    color: #5E5E5E;
+    width: 190px;
+    padding: 5px;
+}
+
+.search-result-item {
+  padding-left: 30px;
+  padding-top: 1px;
+  margin-top: 5px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  background-color: #EBF2FC;
+}
+
+.search-result-item a {
+  color: #699bc9;
+}
+
+.search-result-item .gs-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #15c;
+}
+
+.search-result-item .gs-watermark {
+  display: none;
+}
+
+.search-result-item .gs-directions {
+  display: none;
+}
+
+.search-result-item .gs-directions-to-from {
+  display: none;
+}
+
+.search-result-item .select {
+  cursor: hand;
+  text-decoration: underline;
+  color: #7777cc;
+}
+
+#route-address {
+    width: 160px;
+}
+
+.liveview-data {
+    /*  background: #eee;*/
+    background: #747474;
+    border: 1px solid #686868;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 270px;
+    overflow-y: auto;
+    margin-left: 10px;
+    height: 100%;
+}
+
+.liveview-data-history {
+    /*  background: #eee;*/
+    background: #747474;
+    border: 1px solid #686868;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 270px;
+    overflow-y: auto;
+    margin-left: 10px;
+    /*position: absolute;*/
+    height: 370px;
+}
+
+
+
+#minidash {
+    margin-left: 10px;
+    width: 270px;
+    padding: 5px;
+}
+
+#minidash-active-wrapper {
+
+}
+#minidash-distance-wrapper {
+    float: left;
+}
+#minidash-engine-wrapper {
+    float: right;
+}
+#minidash-idle-wrapper {
+    float: left;
+}
+#minidash-speeding-wrapper {
+    float: right;
+}
+
+.vehicle-list-item, .user-list-item, .vehicle-history-item, .history-action-event-item {
+    color: #e8e8e8;
+    text-decoration: none;
+
+}
+
+.vehicle-list-item {
+    float: left;
+    display: block;
+}
+
+.vehicle-list-item:hover, .user-list-item:hover, .vehicle-history-item:hover, .history-action-event-item:hover {
+    color: #ffffff;
+}
+
+#liveview-data {
+    height: 100%;
+}
+
+#vehicles-screen-wrapper {
+    height:100%;
+}
+#vehicles-screen {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    padding-left: 5px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.vehicle-status-indicator-box {
+    float: left;
+    border: solid 1px #666;
+    margin: 3px 5px 0px 2px;
+    width: 10px;
+    height: 10px;
+}
+
+#vehicles-screen li {
+}
+
+#drivers-screen {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+#toggle-search, #toggle-route {
+    width: 116px;
+    text-align: center;
+}
+
+#toggle-geofences, #toggle-traffic {
+    width: 75px;
+    text-align: center;
+}
+
+#toggle-kml {
+    width: 75px;
+    text-align: center;
+}
+
+#vehicle-being-viewed,  #event-vehicle-driver, #trail-vehicle-driver {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+#vehicle-information-container, #event-information-container, #trail-information-container {
+    padding: 2px 8px;
+    width: 300px;
+}
+
+#vehicle-information-container div, #event-information-container div, #trail-information-container div {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#vehicle-heading {
+    font-weight: bold;
+}
+
+#vehicle-state, #event-vehicle-status {
+    font-weight: bold;
+}
+
+#vehicle-last-update {
+    color: #ffffff;
+}
+
+#vehicle-speed {
+    font-weight: bold;
+}
+
+#vehicle-geographical-location {
+    font-size: 80%;
+    color: #ccc;
+}
+
+.vehicle-last-report, #event-vehicle-status-wrapper {
+    color: #ffffff;
+}
+
+.vehicle-last-report-style-driving {
+    background-color: rgb(50,205,50);
+    color: #ffffff;
+}
+
+.vehicle-last-report-style-stopped {
+    background-color: red;
+    color: #ffffff;
+}
+/* Orange - later use
+rgb(50,205,50);
+
+*/
+
+#history-date {
+	margin-left: 30px;
+    height: 240px;
+    margin-bottom:15px;
+}
+
+#history-vehicles-select {
+	width: 270px;
+	margin-left: 10px;  
+}
+
+#history-vehicles-list, #history-action-events-list {
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	padding-left: 5px;
+       /* overflow-y: scroll;*/
+        height: 100%;       
+}
+
+#history-action-events-list {
+	display: none;
+}
+
+#history-table {
+    height: 100%;
+}
+
+#minidash-wrapper {
+    height: 100px;
+}
+
+#minidash {
+	display: none;
+}
+
+.labeled-marker {
+    font-size: 80%;
+    padding-left: 8px;
+    line-height:13px;
+    white-space: nowrap;
+    padding-right: 5px;
+}
+
+.labeled-marker div {
+    line-height:14px;
+}
+
+.labeled-marker-name {
+    font-weight: bold;
+}
+
+.labeled-marker-state {
+}
+
+.route-result {
+    margin-bottom: 10px;
+}
+
+.route-result-markers {
+    float: left;
+}
+
+.route-result-text {
+    margin-left: 55px;
+}
+
+.route-result-text > div{
+}
+
+.route-result-icon-end {
+    margin-left: 3px;
+}
+
+#tpms-container {
+	float: left;
+	position: relative;
+	width: 720px;
+    height: 300px;
+}
+
+.tpms-tire-with-data {
+    cursor: pointer;
+    color: #333 !important;
+}
+
+.tpms-tire {
+    color: #CCC;
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    text-align: center;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.tpms-part {
+    position: absolute;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    text-align: center;
+    vertical-align: middle ;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 1.4em;
+    color: #666
+}
+
+#tpms-detail {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+}
+
+.tpms-tab-alert {
+    background-image: url(/images/tpms/alert.png);
+    padding-left: 19px !important;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.tpms-tab-normal {
+    background-image: url(/images/tpms/normal.png);
+    padding-left: 19px !important;
+    background-repeat: no-repeat;
+    background-position: left center;
+}

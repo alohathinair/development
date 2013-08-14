@@ -1,0 +1,170 @@
+* {
+	margin: 0px; 
+	padding: 0px;
+}
+BODY {
+	color: rgb(51, 51, 51); line-height: 16px; font-family: Arial, Helvetica, sans-serif; font-size: 12px;
+}
+P {
+	margin-top:10px;
+	margin-bottom: 5px;
+}
+A {
+	color: #39C; 
+	text-decoration: none;
+}
+A:hover {
+	text-decoration: underline;
+}
+TABLE {
+	width: 100%; border-collapse: collapse;
+}
+TD {
+	text-align: left;
+}
+TH {
+	text-align: left;
+}
+IMG {
+	vertical-align: bottom;
+}
+#container {
+	margin: 0px auto; 
+	width: 760px; 
+	text-align: left; 
+	border-right-color: rgb(255, 255, 255); 
+	border-left-color: rgb(255, 255, 255); 
+	border-right-width: 7px; 
+	border-left-width: 7px; 
+	border-right-style: solid; 
+	border-left-style: solid; 
+	background-color: rgb(255, 255, 255);
+}
+#headerWrapper {
+	background: url(Images/bg_loginheader.gif) repeat-x left top rgb(0, 102, 153); 
+	height: 100px; 
+	border-bottom-color: rgb(224, 224, 224); 
+	border-bottom-width: 7px; 
+	border-bottom-style: solid;
+}
+#header {
+	padding: 67px 50px 0px 0px; text-align: right;
+}
+#header A {
+	color: rgb(255, 255, 255);
+}
+#logo {
+	background-image: url(Images/SVLogo.png);
+	background-position: left;
+	background-repeat: no-repeat;
+	height: 40px;
+	text-align: right;
+	margin: auto;
+}
+#contactus {
+	width: 760px; 
+	height: 22px;	
+	text-align: right;
+	margin: auto;
+	color: White;
+}
+#contactus A {
+	color: White;
+	text-decoration: underline;
+}
+
+#content {
+	padding: 20px; 
+	height: 340px; 
+	border-right-color: rgb(224, 224, 224); 
+	border-right-width: 1px; 
+	border-right-style: solid;
+	vertical-align: bottom;
+
+}
+H1 {
+	color: rgb(0, 102, 153); padding-bottom: 10px; font-size: 22px; font-weight: bold; line-height: 30px;
+}
+#content H2 {
+	color: rgb(255, 153, 0); font-size: 14px;
+}
+#content H3 {
+	padding: 0px; color: rgb(0, 102, 153); font-size: 13px;
+}
+#content UL {
+	margin: 0px 0px 20px;
+}
+#content UL LI {
+	background: url(Images/bullet_content_li.gif) no-repeat left top; list-style: none; padding: 0px 0px 5px 15px;
+}
+.rule {
+	margin-bottom: 20px; border-bottom-color: rgb(224, 224, 224); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.ruleAlt {
+	margin-bottom: 20px; border-bottom-color: rgb(224, 224, 224); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.callOut {
+	padding: 15px 15px 0px; border: 1px solid rgb(224, 224, 224); margin-bottom: 20px; background-color: rgb(242, 242, 242);
+}
+.contact {
+	
+}
+#login_Body {
+	background: url(Images/home_screenShot.jpg); width: 239px;
+}
+.login_Body {
+	background: url(Images/home_screenShot.jpg); width: 239px;
+}
+.login_Button {
+	cursor: pointer; background-image: url("Images/but_Submit_Grey.gif"); background-color: transparent; margin-top: 10px;
+}
+#contentNavWrapper {
+	width: 260px; 
+	float: right;
+}
+#Box {
+	width: 88px; height: 34px;
+}
+#contentNav {
+	
+}
+#loginBox {
+	padding: 20px 0px 10px 20px; border-bottom-color: rgb(224, 224, 224); border-bottom-width: 7px; border-bottom-style: solid; background-color: rgb(242, 242, 242);
+}
+#googlelogo {
+	padding: 20px 0px 20px 20px; 
+	background-image: url(Images/Google_poweredBy.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 50px;
+}
+#subContentBox {
+	padding: 20px 20px 0px;
+}
+#contentNav H2 {
+	color: rgb(0, 102, 153); padding-bottom: 10px; font-size: 17px;
+}
+#footerWrapper {
+	clear: both; border-top-color: rgb(224, 224, 224); border-top-width: 7px; border-top-style: solid;
+}
+#footer {
+	padding: 5px;
+}
+INPUT {
+	padding: 2px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px;
+}
+SELECT {
+	padding: 2px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px;
+}
+TEXTAREA {
+	padding: 2px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px;
+}
+.formWrapper {
+	margin-bottom: 20px; border-top-color: rgb(224, 224, 224); border-right-color: rgb(224, 224, 224); border-left-color: rgb(224, 224, 224); border-top-width: 1px; border-right-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-left-style: solid; background-color: rgb(242, 242, 242);
+}
+.formWrapper TD {
+	padding: 7px 0px 7px 10px; border-bottom-color: rgb(224, 224, 224); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#tourBlock {
+	height: 340px; margin-bottom: 20px;
+}

@@ -1,0 +1,31 @@
+---
+components:
+	jquery: util/jQuery
+	jqueryui: util/jQueryUI
+	geocoder: util/Geocoder
+	googlemaps: mapping/GoogleMaps
+	earthmaps: mapping/GoogleEarth
+	events: tracking/Events
+	notifications: tracking/Notifications
+	devices: tracking/Devices
+	landmarks: tracking/Landmarks
+	liveview: tracking/LiveView
+	users: tracking/Users
+	reports: tracking/Reports
+	alertrules: management/AlertRules
+	alerttemplates: management/AlertTemplates
+	company: management/Company
+	companyorganization: management/CompanyOrganization
+	devicemanagement: management/DeviceManagement
+	usermanagement: management/UserManagement
+	treeview: util/Treeview
+	scheduling: tracking/Scheduling
+	routeplayback: tracking/RoutePlayback
+	mappedreports: tracking/MappedReports
+	graphedreports: tracking/GraphedReports
+	charts: util/Charts
+	routehistory: tracking/RouteHistory
+	dashboard: tracking/Dashboard
+	jqtip: util/jQTip
+	fileuploader: util/FileUploader
+

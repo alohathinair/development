@@ -1,0 +1,1 @@
+<?php $this->render_component_partial("alerttemplates", "list_alert_templates"); ?>

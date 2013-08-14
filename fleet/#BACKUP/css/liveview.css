@@ -1,0 +1,48 @@
+/*#map {
+	width: 100%;
+	height: 500px;
+}
+
+.liveview-menu-button {
+	display: inline;
+}
+
+#vehicle-information-tabs {
+	display: none;
+	height: 400px;
+}
+
+#user_notification_list {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 320px;
+}
+
+
+*/
+
+#content-accordians {
+	float: left;
+	width: 347px;
+	height: 500px;
+}
+
+.accordian {
+
+}
+
+.accordian .head {
+
+}
+
+.accordian .content {
+
+}
+
+#map {
+	width: 487px;
+	height: 500px;
+	float: right;
+}
+
+

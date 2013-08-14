@@ -1,0 +1,71 @@
+
+.left-col, .right-col {
+    width: 270px;
+}
+
+.left-col {
+    float: left;
+}
+
+.right-col {
+    float: right;
+}
+
+.section {
+    padding-bottom: 10px;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.section-content {
+    padding-top: 5px;
+}
+
+#device-table {
+    border-top: 1px solid #ccc;
+}
+
+#device-list {
+    border-top: 1px solid #ccc;
+}
+
+#device-table th {
+    font-weight: bold;
+}
+
+#device-filter {
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+#device-edit-notes {
+    width: 230px;
+}
+
+#device-edit-enteredOdometer {
+    width: 70px !important;
+}
+
+#device-edit-vehicleYear {
+    width: 50px !important;
+}
+
+#device-edit-name {
+    display: block !important;
+    width: 93% !important;
+}
+
+.form-dialog fieldset label {
+    display:inline-block ;
+    min-width: 70px;
+}
+
+.form-dialog fieldset .text {
+    display: inline-block !important;
+    width: 140px !important;
+}
