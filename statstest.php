@@ -23,5 +23,4 @@ foreach ($events as $event_id=>$event) {
 $on = Statistics::engine_on_time_for_day(array_reverse($events));
 echo "On for $on seconds, or " . $on/60 . " minutes";
 
-
 ?>
