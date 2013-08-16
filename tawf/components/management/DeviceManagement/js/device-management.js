@@ -132,14 +132,7 @@ $(document).ready(function() {
                url:  WWW_ROOT + "/Products/Update",
                dataType: "jsonp"
            },
-           destroy: {
-               url:  WWW_ROOT + "/Products/Destroy",
-               dataType: "jsonp"
-           },
-           create: {
-               url:  WWW_ROOT + "/Products/Create",
-               dataType: "jsonp"
-           },
+
            parameterMap: function(options, operation) {
                if (operation !== "read" && options.models) {
                    return {models: kendo.stringify(options.models)};
@@ -156,7 +149,7 @@ $(document).ready(function() {
             refresh: true,
             pageSizes: true
         },
-        toolbar: ["create"],
+
 
         columns: [
             {
@@ -166,7 +159,7 @@ $(document).ready(function() {
             }, {
                 field: "VehicleVIN",
                 title: "VIN",
-                width: 100
+                width: 120
             }, {
                 field: "Serial",
                 title: "Serial #",
@@ -188,7 +181,7 @@ $(document).ready(function() {
                 width: 150
             },
             {
-                command: ["edit", "destroy"], title: "&nbsp;", width: "150px"
+                command: ["edit"], title: "&nbsp;", width: "175px"
             }
             ],
             editable: "inline"
