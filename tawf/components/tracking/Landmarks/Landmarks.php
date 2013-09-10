@@ -176,7 +176,6 @@ class Landmarks extends TAWComponent {
         }
 
 	public function save_landmark() {
-		echo "Hipp";
 		$db = TAWDBI::singleton();
 		$user = TAWUser::singleton();
 		
